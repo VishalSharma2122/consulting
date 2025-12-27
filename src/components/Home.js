@@ -55,12 +55,12 @@ export default function Home() {
   ];
 
   const bonuses = [
-    { title: 'BONUS 1', desc: 'Facebook & Google Ads Mastery Guide' },
-    { title: 'BONUS 2', desc: 'Lead Generation Checklist' },
-    { title: 'BONUS 3', desc: 'Conversion Funnel Template' },
-    { title: 'BONUS 4', desc: 'Patient Retention Strategies' },
-    { title: 'BONUS 5', desc: 'Social Media Content Calendar' },
-    { title: 'BONUS 6', desc: 'Analytics Dashboard Setup' }
+    { title: 'BONUS 1', desc: './BONUS 1.webp' },
+    { title: 'BONUS 2', desc: './BONUS 3.webp' },
+    { title: 'BONUS 3', desc: './BONUS 3.webp' },
+    { title: 'BONUS 4', desc: './BONUS 4.webp' },
+    { title: 'BONUS 5', desc: './BONUS 5.webp' },
+    { title: 'BONUS 6', desc: './BONUS 6.webp' }
   ];
 
   const faqs = [
@@ -271,23 +271,31 @@ export default function Home() {
 
       {/* Bonuses */}
       <section className="bg-gradient-to-r from-yellow-400 to-yellow-500 py-16">
-        <div className="max-w-7xl mx-auto px-6">
-          <h2 className="text-3xl font-bold mb-4 text-center text-blue-900">
-            SIGN UP TODAY AND GET FREE BONUSES WORTH ₹6,500/-
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
-            {bonuses.map((bonus, idx) => (
-              <div
-                key={idx}
-                className="bg-white p-6 rounded-xl shadow-md text-center"
-              >
-                <h3 className="font-bold text-blue-600 mb-2">{bonus.title}</h3>
-                <p className="text-gray-700">{bonus.desc}</p>
-              </div>
-            ))}
-          </div>
+  <div className="max-w-7xl mx-auto px-6">
+    <h2 className="text-3xl font-bold mb-4 text-center text-blue-900">
+      SIGN UP TODAY AND GET FREE BONUSES WORTH ₹6,500/-
+    </h2>
+
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
+      {bonuses.map((bonus, idx) => (
+        <div
+          key={idx}
+          className="bg-white p-6 rounded-xl shadow-md text-center"
+        >
+          <h3 className="font-bold text-blue-600 mb-4">
+            {bonus.title}
+          </h3>
+
+          <img
+            src={bonus.desc}
+            className="mx-auto max-h-40 object-contain"
+          />
         </div>
-      </section>
+      ))}
+    </div>
+  </div>
+</section>
+
 
       {/* Final CTA */}
       <section className="bg-blue-600 text-white py-16">

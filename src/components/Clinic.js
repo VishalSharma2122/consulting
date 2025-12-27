@@ -1,15 +1,15 @@
-import React from 'react';
+import React from "react";
 
 export default function Clinics() {
   const clinics = [
-    { title: 'Urologists', icon: '🧑‍⚕️' },
-    { title: 'Sexologists', icon: '⚥' },
-    { title: 'Men’s Health Clinics', icon: '❤️' },
-    { title: 'IVF & Fertility Clinics', icon: '👶' },
-    { title: 'Aesthetic Surgeons', icon: '✨' },
-    { title: 'Kidney Care Experts', icon: '🫘' },
-    { title: 'Dermatologists', icon: '🧴' },
-    { title: 'Gastroenterologists', icon: '🩺' }
+    { title: "Urologists", icon: "/Urologists.png" },
+    { title: "Sexologists", icon: "/Sexologists.webp" },
+    { title: "Men’s Health Clinics", icon: "/men.webp" },
+    { title: "IVF & Fertility Clinics", icon: "/ivff.webp" },
+    { title: "Aesthetic Surgeons", icon: "/aesthetic.webp" },
+    { title: "Kidney Care Experts", icon: "/kidneyex.webp" },
+    { title: "Dermatologists", icon: "/Dermatologists.webp" },
+    { title: "Gastroenterologists", icon: "/Gastroenterologists.webp" }
   ];
 
   return (
@@ -28,17 +28,19 @@ export default function Clinics() {
               className="bg-[#5b5b5b] border-2 border-white rounded-2xl 
                          overflow-hidden group hover:scale-105 transition duration-300"
             >
-              {/* Title Bar */}
+              {/* Title */}
               <div className="bg-[#6b6b6b] text-white font-bold text-center py-3 text-lg">
                 {clinic.title}
               </div>
 
               {/* Icon */}
-              <div
-                className="flex items-center justify-center h-40 text-7xl
-                              animate-float group-hover:drop-shadow-[0_0_15px_white] transition"
-              >
-                {clinic.icon}
+              <div className="flex items-center justify-center h-40 animate-float
+                              group-hover:drop-shadow-[0_0_15px_white] transition">
+                <img
+                  src={clinic.icon}
+                  alt={clinic.title}
+                  className="max-h-28 object-contain"
+                />
               </div>
             </div>
           ))}
