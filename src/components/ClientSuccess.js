@@ -8,17 +8,17 @@ export default function ClientSuccess() {
       text: "The Visionary Leader in Healthcare Marketing with over 4 years of experience and 100+ clinics transformed. His proven Big Daddy System helps clinics scale predictably."
     },
     {
-      image: "https://static.vecteezy.com/system/resources/thumbnails/069/459/565/small/smiling-adult-man-in-light-blue-t-shirt-against-clean-white-background-photo.jpeg",
+      image: "https://www.shutterstock.com/image-photo/confident-middle-aged-adult-male-600nw-2578973667.jpg",
       title: "100+ Clinics Scaled",
       text: "UpGro Media has helped over 100 clinics achieve predictable patient acquisition using performance marketing and funnel optimization."
     },
     {
-      image: "https://static.vecteezy.com/system/resources/thumbnails/069/459/565/small/smiling-adult-man-in-light-blue-t-shirt-against-clean-white-background-photo.jpeg",
+      image: "https://www.shutterstock.com/image-photo/happy-asian-man-holding-tasty-260nw-2300422733.jpg",
       title: "Result Driven Systems",
       text: "From paid ads to high-converting consultation funnels, our systems are built for measurable growth and long-term scalability."
     },
     {
-      image: "https://static.vecteezy.com/system/resources/thumbnails/069/459/565/small/smiling-adult-man-in-light-blue-t-shirt-against-clean-white-background-photo.jpeg",
+      image: "https://www.shutterstock.com/image-photo/hispanic-man-beard-wearing-casual-260nw-2026224830.jpg",
       title: "Healthcare Marketing Authority",
       text: "Recognized as a trusted growth partner for healthcare professionals across India."
     }
