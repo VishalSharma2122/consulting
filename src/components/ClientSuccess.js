@@ -29,6 +29,10 @@ export default function ClientSuccess() {
 
   return (
     <section className="bg-black py-20">
+      <h2 className="text-4xl font-extrabold text-white text-center mb-16">
+          Meet Our Team
+          <span className="block w-32 h-1 bg-cyan-400 mx-auto mt-4 rounded-full"></span>
+        </h2>
       <div className="max-w-6xl mx-auto px-6">
 
         {/* IMAGE */}
