@@ -7,9 +7,9 @@ export default function Clients() {
     'https://upgromedia.in/wp-content/uploads/al_opt_content/IMAGE/upgromedia.in/wp-content/uploads/elementor/thumbs/Derma-Klinic-qzpf49twto1d5bwjr8sevfhumreb49bfng9ycorhb0.png.bv.webp?bv_host=upgromedia.in',
     './kundan.webp',
     './awish.webp',
+    './Arunveda.webp',
     './tej.webp',
-    './awish.webp',
-    './derma.webp',
+   
   ];
 
   // Row 2 Images

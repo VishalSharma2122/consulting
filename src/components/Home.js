@@ -119,7 +119,7 @@ export default function Home() {
       </section>
 
       <Services />
-      <LeadAutomationSection/>
+      <LeadAutomationSection />
 
       {/* Video Testimonial Section */}
       <section className="max-w-7xl mx-auto px-6 py-16">
@@ -267,53 +267,51 @@ export default function Home() {
           Book One to One Strategy
         </button>
       </div>
-      <div className=" flex justify-center">
-        <img src="/upgro.webp" alt="UpGro" className=" w-[600px] h-[500px] " />
-      </div>
+     <div className="flex justify-center">
+  <img
+    src="/upgro.webp"
+    alt="UpGro"
+    className="w-full max-w-[600px] h-auto object-contain"
+  />
+</div>
 
       {/* Bonuses */}
       <section className="bg-black py-16">
-  <div className="max-w-7xl mx-auto px-6">
+        <div className="max-w-7xl mx-auto px-6">
+          {/* Heading */}
+          <h2 className="text-3xl font-bold text-center text-white mb-10">
+            SIGN UP TODAY AND GET FREE BONUSES WORTH ₹6,500/-
+          </h2>
 
-    {/* Heading */}
-    <h2 className="text-3xl font-bold text-center text-white mb-10">
-      SIGN UP TODAY AND GET FREE BONUSES WORTH ₹6,500/-
-    </h2>
+          {/* Bonus Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {bonuses.map((bonus, idx) => (
+              <div
+                key={idx}
+                className="border-2 border-cyan-400 rounded-2xl overflow-hidden bg-black"
+              >
+                {/* Top Cyan Header */}
+                <div className="bg-cyan-400 py-3">
+                  <h3 className="text-center text-black font-bold text-xl">
+                    {bonus.title}
+                  </h3>
+                </div>
 
-    {/* Bonus Grid */}
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-
-      {bonuses.map((bonus, idx) => (
-        <div
-          key={idx}
-          className="border-2 border-cyan-400 rounded-2xl overflow-hidden bg-black"
-        >
-
-          {/* Top Cyan Header */}
-          <div className="bg-cyan-400 py-3">
-            <h3 className="text-center text-black font-bold text-xl">
-              {bonus.title}
-            </h3>
+                {/* Content Area */}
+                <div className="p-6 flex justify-center">
+                  <div className="bg-white rounded-xl p-4 shadow-md">
+                    <img
+                      src={bonus.desc}
+                      alt={bonus.label}
+                      className="max-h-48 object-contain mx-auto"
+                    />
+                  </div>
+                </div>
+              </div>
+            ))}
           </div>
-
-          {/* Content Area */}
-          <div className="p-6 flex justify-center">
-            <div className="bg-white rounded-xl p-4 shadow-md">
-              <img
-                src={bonus.desc}
-                alt={bonus.label}
-                className="max-h-48 object-contain mx-auto"
-              />
-            </div>
-          </div>
-
         </div>
-      ))}
-
-    </div>
-  </div>
-</section>
-
+      </section>
 
       {/* Final CTA */}
       <section className="bg-blue-600 text-white py-16">
