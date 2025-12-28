@@ -1,17 +1,18 @@
-import React, { useState, useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
-import Services from './Service';
-import Clinics from './Clinic';
-import Testimonials from './Testimonial';
-import Clients from './Clients';
-import ClientSuccess from './ClientSuccess';
+import React, { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
+import Services from "./Service";
+import Clinics from "./Clinic";
+import Testimonials from "./Testimonial";
+import Clients from "./Clients";
+import ClientSuccess from "./ClientSuccess";
+import { LeadAutomationSection } from "./Lead";
 
 export default function Home() {
   const navigate = useNavigate();
   const [timeLeft, setTimeLeft] = useState({
     hours: 0,
     minutes: 10,
-    seconds: 0
+    seconds: 0,
   });
   const [pageTimer, setPageTimer] = useState({ minutes: 10, seconds: 0 });
 
@@ -46,40 +47,40 @@ export default function Home() {
   }, []);
 
   const benefits = [
-    'Drive High-Quality Paid Appointments',
-    'Ideas for High-Quality Lead Generation',
+    "Drive High-Quality Paid Appointments",
+    "Ideas for High-Quality Lead Generation",
     "Enhance Your Clinic's Online Presence",
-    'Proven Funnel for Consistent Leads',
-    'Nurture Leads into Loyal Patients',
-    'Facebook & Google Ads Campaign Template'
+    "Proven Funnel for Consistent Leads",
+    "Nurture Leads into Loyal Patients",
+    "Facebook & Google Ads Campaign Template",
   ];
 
   const bonuses = [
-    { title: 'BONUS 1', desc: './BONUS 1.webp' },
-    { title: 'BONUS 2', desc: './BONUS 3.webp' },
-    { title: 'BONUS 3', desc: './BONUS 3.webp' },
-    { title: 'BONUS 4', desc: './BONUS 4.webp' },
-    { title: 'BONUS 5', desc: './BONUS 5.webp' },
-    { title: 'BONUS 6', desc: './BONUS 6.webp' }
+    { title: "BONUS 1", desc: "./BONUS 1.webp" },
+    { title: "BONUS 2", desc: "./BONUS 3.webp" },
+    { title: "BONUS 3", desc: "./BONUS 3.webp" },
+    { title: "BONUS 4", desc: "./BONUS 4.webp" },
+    { title: "BONUS 5", desc: "./BONUS 5.webp" },
+    { title: "BONUS 6", desc: "./BONUS 6.webp" },
   ];
 
   const faqs = [
     {
-      q: 'What happens during the 1 to 1 consultation?',
-      a: "You'll receive personalized analysis of your clinic's challenges and opportunities with custom strategies to boost patient flow and revenue."
+      q: "What happens during the 1 to 1 consultation?",
+      a: "You'll receive personalized analysis of your clinic's challenges and opportunities with custom strategies to boost patient flow and revenue.",
     },
     {
-      q: 'How soon will I see results?',
-      a: 'Most clinics see results within 45 days with consistent implementation of our proven strategies.'
+      q: "How soon will I see results?",
+      a: "Most clinics see results within 45 days with consistent implementation of our proven strategies.",
     },
     {
       q: "What is the 'UpGro Media' strategy?",
-      a: 'Our Big Daddy System combines ads, funnels, and measurement to deliver 3X growth in patient appointments.'
+      a: "Our Big Daddy System combines ads, funnels, and measurement to deliver 3X growth in patient appointments.",
     },
     {
-      q: 'Do you guarantee results?',
-      a: 'We provide proven strategies and full support. Results depend on proper implementation and clinic readiness.'
-    }
+      q: "Do you guarantee results?",
+      a: "We provide proven strategies and full support. Results depend on proper implementation and clinic readiness.",
+    },
   ];
 
   return (
@@ -109,7 +110,7 @@ export default function Home() {
           </p>
           <div className=" my-80"></div>
           <button
-            onClick={() => navigate('/consultation')}
+            onClick={() => navigate("/consultation")}
             className="inline-block bg-yellow-400 text-blue-900 font-bold px-8 py-4 rounded-lg shadow-lg hover:scale-105 transition text-lg"
           >
             Book Your Strategy Call Now
@@ -118,6 +119,7 @@ export default function Home() {
       </section>
 
       <Services />
+      <LeadAutomationSection/>
 
       {/* Video Testimonial Section */}
       <section className="max-w-7xl mx-auto px-6 py-16">
@@ -170,15 +172,15 @@ export default function Home() {
             </p>
           </div>
           <button
-            onClick={() => navigate('/consultation')}
+            onClick={() => navigate("/consultation")}
             className="inline-block bg-yellow-400 text-blue-900 font-bold px-10 py-4 rounded-lg shadow-lg hover:scale-105 transition text-lg"
           >
             BOOK NOW
           </button>
           <p className="mt-4 text-blue-100">
-            {String(timeLeft.hours).padStart(2, '0')} HRS{' '}
-            {String(timeLeft.minutes).padStart(2, '0')} MINS{' '}
-            {String(timeLeft.seconds).padStart(2, '0')} SECS
+            {String(timeLeft.hours).padStart(2, "0")} HRS{" "}
+            {String(timeLeft.minutes).padStart(2, "0")} MINS{" "}
+            {String(timeLeft.seconds).padStart(2, "0")} SECS
           </p>
         </div>
       </section>
@@ -259,7 +261,7 @@ export default function Home() {
       </section>
       <div className="flex justify-center">
         <button
-          onClick={() => navigate('/consultation')}
+          onClick={() => navigate("/consultation")}
           className="inline-block bg-red-500 text-2xl text-blue-900 font-bold px-12 py-4 rounded-lg shadow-lg hover:scale-105 transition mb-10"
         >
           Book One to One Strategy
@@ -270,28 +272,44 @@ export default function Home() {
       </div>
 
       {/* Bonuses */}
-      <section className="bg-gradient-to-r from-yellow-400 to-yellow-500 py-16">
+      <section className="bg-black py-16">
   <div className="max-w-7xl mx-auto px-6">
-    <h2 className="text-3xl font-bold mb-4 text-center text-blue-900">
+
+    {/* Heading */}
+    <h2 className="text-3xl font-bold text-center text-white mb-10">
       SIGN UP TODAY AND GET FREE BONUSES WORTH ₹6,500/-
     </h2>
 
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
+    {/* Bonus Grid */}
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
       {bonuses.map((bonus, idx) => (
         <div
           key={idx}
-          className="bg-white p-6 rounded-xl shadow-md text-center"
+          className="border-2 border-cyan-400 rounded-2xl overflow-hidden bg-black"
         >
-          <h3 className="font-bold text-blue-600 mb-4">
-            {bonus.title}
-          </h3>
 
-          <img
-            src={bonus.desc}
-            className="mx-auto max-h-40 object-contain"
-          />
+          {/* Top Cyan Header */}
+          <div className="bg-cyan-400 py-3">
+            <h3 className="text-center text-black font-bold text-xl">
+              {bonus.title}
+            </h3>
+          </div>
+
+          {/* Content Area */}
+          <div className="p-6 flex justify-center">
+            <div className="bg-white rounded-xl p-4 shadow-md">
+              <img
+                src={bonus.desc}
+                alt={bonus.label}
+                className="max-h-48 object-contain mx-auto"
+              />
+            </div>
+          </div>
+
         </div>
       ))}
+
     </div>
   </div>
 </section>
@@ -308,7 +326,7 @@ export default function Home() {
             <div className="text-5xl font-bold">Now ₹ 299</div>
           </div>
           <button
-            onClick={() => navigate('/consultation')}
+            onClick={() => navigate("/consultation")}
             className="inline-block bg-yellow-400 text-blue-900 font-bold px-10 py-4 rounded-lg shadow-lg hover:scale-105 transition text-lg"
           >
             BOOK NOW
@@ -335,7 +353,7 @@ export default function Home() {
 
       {/* Floating Timer Button */}
       <button
-        onClick={() => navigate('/consultation')}
+        onClick={() => navigate("/consultation")}
         className="fixed bottom-8 left-8 bg-gradient-to-br from-red-600 via-red-700 to-red-800 text-white px-8 py-5 rounded-2xl shadow-2xl hover:shadow-red-500/50 hover:scale-105 transition-all z-40 flex items-center gap-4 font-bold border-2 border-red-400 animate-pulse"
       >
         <div className="text-4xl animate-bounce">🕐</div>
@@ -344,7 +362,7 @@ export default function Home() {
             ⏱️ Limited Time
           </div>
           <div className="text-2xl font-extrabold text-red-100">
-            {pageTimer.minutes}:{String(pageTimer.seconds).padStart(2, '0')}
+            {pageTimer.minutes}:{String(pageTimer.seconds).padStart(2, "0")}
           </div>
           <div className="text-xl font-bold text-red-200 mt-1">Book Now →</div>
         </div>
