@@ -8,6 +8,7 @@ export default function Clients() {
     './kundan.webp',
     './awish.webp',
     './tej.webp',
+    './awish.webp',
     './derma.webp',
   ];
 
