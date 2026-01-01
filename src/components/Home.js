@@ -66,20 +66,68 @@ export default function Home() {
 
   const faqs = [
     {
-      q: "What happens during the 1 to 1 consultation?",
-      a: "You'll receive personalized analysis of your clinic's challenges and opportunities with custom strategies to boost patient flow and revenue.",
+      q: "What happens during the 1-to-1 consultation?",
+      a: "During the 1-to-1 consultation, we analyze your clinic’s current patient flow, online presence, competition, and growth challenges. You’ll receive a clear breakdown of what’s working, what’s not, and practical strategies to increase appointments. This session is focused on clarity, not selling.",
     },
     {
-      q: "How soon will I see results?",
-      a: "Most clinics see results within 45 days with consistent implementation of our proven strategies.",
+      q: "Is this marketing service suitable for my type of clinic?",
+      a: "Yes. Our strategies are designed specifically for doctors, specialists, and healthcare clinics. Whether you run a dermatology, IVF, men’s health, or multi-specialty clinic, we customize the approach based on your specialty, location, and patient behavior.",
     },
     {
-      q: "What is the 'UpGro Media' strategy?",
-      a: "Our Big Daddy System combines ads, funnels, and measurement to deliver 3X growth in patient appointments.",
+      q: "How soon can I expect to see new patient appointments?",
+      a: "Most clinics begin seeing improved inquiries and appointment bookings within 30–45 days. The exact timeline depends on your location, competition, ad budget, and how quickly recommendations are implemented. We focus on sustainable growth, not short-term spikes.",
     },
     {
-      q: "Do you guarantee results?",
-      a: "We provide proven strategies and full support. Results depend on proper implementation and clinic readiness.",
+      q: "Do you run Google Ads and Facebook Ads for clinics?",
+      a: "Yes. We manage Google Ads and Meta (Facebook & Instagram) campaigns tailored for healthcare services. All ads are created with compliance, patient trust, and conversion optimization in mind to ensure quality leads, not wasted spend.",
+    },
+     {
+      q: "How soon can I expect to see new patient appointments?",
+      a: "Most clinics begin seeing improved inquiries and appointment bookings within 30–45 days. The exact timeline depends on your location, competition, ad budget, and how quickly recommendations are implemented. We focus on sustainable growth, not short-term spikes.",
+    },
+    {
+      q: "What makes your clinic marketing strategy different?",
+      a: "Unlike generic agencies, we focus only on healthcare marketing. Our strategy combines paid ads, high-conversion funnels, local SEO insights, and patient psychology to attract people actively looking for treatment, not just clicks.",
+    },
+     {
+      q: "Will this help improve my clinic’s local visibility on Google?",
+      a: "Yes. Along with paid campaigns, we guide clinics on improving Google Business Profile optimization, reviews strategy, and local search visibility. This helps your clinic appear more frequently in nearby patient searches..",
+    },
+    {
+      q: "Do you guarantee results or patient numbers?",
+      a: "We don’t promise unrealistic patient numbers. What we do guarantee is a proven system, transparent reporting, and best-practice execution. Results depend on multiple factors like location, services, and follow-up quality.",
+    },
+    {
+      q: "Is this service compliant with medical advertising guidelines?",
+      a: "Absolutely. All campaigns are created following medical advertising guidelines. We avoid misleading claims, focus on education and trust, and ensure your clinic’s reputation remains strong and ethical.",
+    },
+    {
+      q: "What budget is required to start clinic marketing?",
+      a: "The marketing budget varies depending on your city, specialty, and competition. During the consultation, we recommend a practical ad budget that aligns with your growth goals without unnecessary overspending.",
+    },
+    {
+      q: "Will I get regular performance reports?",
+      a: "Yes. You receive clear performance updates showing leads, appointments, ad spend, and improvement areas. We focus on simple metrics that matter to clinic owners, not confusing dashboards.",
+    },
+    {
+      q: "Can this help increase repeat patients and referrals?",
+      a: "Yes. Our approach includes lead nurturing and follow-up strategies that help convert first-time visitors into repeat patients and referrals, improving long-term clinic revenue.",
+    },
+    {
+      q: "Do I need a website before starting?",
+      a: "A website helps, but it’s not mandatory. If needed, we guide you on simple, conversion-focused landing pages designed specifically to turn visitors into booked appointments.",
+    },
+    {
+      q: "How much time do I need to invest personally?",
+      a: "Minimal. After the initial consultation and approvals, our team handles execution. You mainly focus on patient care while we manage marketing and optimization.",
+    },
+    {
+      q: "Is this a long-term contract or short-term service?",
+      a: "There are no forced long-term contracts. We believe in earning trust through results, allowing clinics to continue based on performance and satisfaction.",
+    },
+    {
+      q: "How do I get started with the consultation?",
+      a: "Getting started is simple. Book your 1-to-1 strategy call, choose a suitable time, and come prepared with your clinic goals. We’ll take care of the rest.",
     },
   ];
 
